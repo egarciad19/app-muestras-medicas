@@ -11,5 +11,9 @@ app.get('/*', (req, res) =>
     res.sendFile('index.html', {root: 'dist/SistemaMuestrasMedicas/'}),
 );
 
+var port = process.env.PORT || 8080;
+
 // Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
+app.listen(port, () => {
+    console.log('Servidor corriendo en ', port);
+});
