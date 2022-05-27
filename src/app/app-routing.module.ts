@@ -40,3 +40,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const APP_ROUTING = RouterModule.forRoot(routes);
