@@ -101,8 +101,8 @@ export class BandejaAnalistaComponent implements OnInit {
   }
 
 
-  cerrarSesion() {
-    Swal.fire({
+  regresar() {
+    /*Swal.fire({
       title: 'Esta seguro que desea cerrar sesion?',
       //text: `Codigo Solicitud: ` + ,
       icon: 'warning',
@@ -116,7 +116,8 @@ export class BandejaAnalistaComponent implements OnInit {
       if (result.isConfirmed) {
         this.router.navigate(['login']);
       } 
-    })
+    })*/
+    this.router.navigate(['mantenimiento-solicitudes/', this.nit]);
   }
 
   acciones: Opciones[] = [
