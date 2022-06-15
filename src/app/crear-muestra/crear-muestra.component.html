@@ -54,15 +54,12 @@
                                 <input type="file" name="archivoSubido" formControlName="archivoMuestraFormControl" (change)="fileSelected($event)">
                             </div>
                         </div>
-                        
+                        <!--Botones -->
                         <div class="modal-footer">
                                                    
                            <button mat-raised-button matStepperNext class="botones margenBotones" type="button"
                            [disabled]="crearMuestraFormGroup.invalid" (click)="guardarDatos()">Crear</button>
                         </div>
-
-                                
-                            
                      </div>
                  </form>
             </mat-step>

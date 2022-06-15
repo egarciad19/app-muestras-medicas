@@ -1,25 +1,41 @@
 <div class="card-body">
-    
-    <mat-card class="margenArriba">
-        <mat-card-title class="titulo">Bienvenido al Sistema de Muestras Medicas</mat-card-title>
-        <div class="m-0 row justify-content-center">
-            <form [formGroup]="datosFormGroup">
-                <div class="col-auto text-center">
-                    <mat-form-field >
-                        <mat-label>Nombre de Usuario</mat-label>
-                        <input matInput placeholder=""  formControlName="loginFormControl" autocomplete="off">
-                    </mat-form-field>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <mat-card class="margenArriba">
+                <mat-card-title class="titulo">SISTEMA DE MUESTRAS MÉDICAS</mat-card-title>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="m-0 row justify-content-center">
+                    <form [formGroup]="datosFormGroup">
+                        <div class="col-auto text-center">
+                            <mat-form-field>
+                                <mat-label>Nombre de Usuario</mat-label>
+                                <input matInput placeholder="" formControlName="loginFormControl" autocomplete="off">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-auto text-center">
+                            <mat-form-field>
+                                <mat-label>Contraseña</mat-label>
+                                <input matInput type="password" placeholder="" formControlName="passFormControl">
+                            </mat-form-field>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="col-auto text-center">
+                            <button mat-raised-button class="botones margenBotones" type="button"
+                                (click)="iniciarSesion()" [disabled]="datosFormGroup.invalid">Login</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-auto text-center">
-                    <mat-form-field >
-                        <mat-label>Contraseña</mat-label>
-                        <input matInput type="password" placeholder=""  formControlName="passFormControl">
-                    </mat-form-field>
-                </div>
-                <div class="col-auto text-center">
-                    <button mat-raised-button class="botones margenBotones" type="button" (click)="iniciarSesion()" [disabled]="datosFormGroup.invalid">Login</button>
-                </div>
-            </form>
+            </mat-card>
         </div>
-    </mat-card>
+    </div>
 </div>
